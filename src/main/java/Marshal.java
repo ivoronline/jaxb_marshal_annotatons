@@ -16,7 +16,7 @@ public class Marshal {
     //MARSHAL PERSON
     Marshaller  marshaller = JAXBContext.newInstance(Person.class).createMarshaller();
                 marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-                marshaller.marshal(person, new File("person.xml"));
+                marshaller.marshal(person, new File("src/main/resources/person.xml"));
   }
 
 }

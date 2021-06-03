@@ -6,14 +6,10 @@ import javax.xml.bind.annotation.XmlTransient;
 @XmlRootElement(name = "personelement")
 public class Person {
 
-  @XmlAttribute(name = "personid")
-  public Integer id;
-
-  @XmlElement(name = "personname")
-  public String  name;
-
-  @XmlTransient
-  public Integer age;
+  //PROPERTIES
+  @XmlAttribute(name = "personid"  ) public Integer id;
+  @XmlElement  (name = "personname") public String  name;
+  @XmlTransient                      public Integer age;
 
 }
 
